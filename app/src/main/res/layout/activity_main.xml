@@ -6,12 +6,54 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.example.creditscoreview.view.CreditLineView
-        android:layout_width="wrap_content"
-        android:layout_height="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.example.creditscoreview.view.AnimatedPathView
+            android:id="@+id/animated_path"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/color_FF98A22C"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.1"
+            app:strokeColor="@android:color/holo_red_light"
+            app:strokeWidth="10" />
+
+        <com.example.creditscoreview.view.AnimationEditText
+            android:id="@+id/aet_1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/shape_rounded_border_grey"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/animated_path"
+            app:layout_constraintVertical_bias="0.2" />
+
+        <com.example.creditscoreview.view.AnimationEditText
+            android:id="@+id/aet_2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/shape_rounded_border_grey"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/aet_1"
+            app:layout_constraintVertical_bias="0.26" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

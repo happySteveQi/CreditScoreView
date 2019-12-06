@@ -33,7 +33,7 @@ class CreditLineView : View {
     private var SCALED_WIDTH: Float = 0f
     private var NORMAL_HEIGHT: Float = 0f
     private var EACH_LENGTH: Float = 0f
-    private val GAP_LENGTH = dip2px(1f)
+    private val GAP_LENGTH = dp2px(1f)
 
     private var mIndex = 5
 
